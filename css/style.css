@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* font families
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --birght-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --p-color: hsla(0, 0%, 100%, 0.75);
+  --bg-head-btn: hsl(0, 0%, 95%);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-head-btn);
+}
+.container {
+  width: 60%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100% / 3));
+}
+.card {
+  padding: 40px;
+  padding-right: 55px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.card.one {
+  background-color: var(--birght-orange);
+  border-radius: 10px 0 0 10px;
+}
+.card.two {
+  background-color: var(--dark-cyan);
+}
+.card.three {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+.card-image {
+  margin-bottom: 30px;
+}
+.card h1 {
+  color: var(--bg-head-btn);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.card p {
+  color: var(--p-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+}
+.btn {
+  position: absolute;
+  bottom: 10%;
+  left: 37.5%;
+  transform: translate(-50%, 0);
+  width: 125px;
+  height: 40px;
+  border-radius: 25%/75%;
+  outline: none;
+  border: 2px solid var(--bg-head-btn);
+  background-color: var(--bg-head-btn);
+}
+.btn a {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+}
+.btn.one a {
+  color: var(--birght-orange);
+}
+.btn.two a {
+  color: var(--dark-cyan);
+}
+.btn.three a {
+  color: var(--very-dark-cyan);
+}
+.btn:hover {
+  background-color: transparent;
+}
+.btn:hover a {
+  color: white;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer a {
+  color: darkcyan;
+  text-decoration: none;
+  text-transform: capitalize;
+}
